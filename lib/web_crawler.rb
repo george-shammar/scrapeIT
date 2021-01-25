@@ -18,8 +18,12 @@ class Web_crawler
     def get_link
         @parsed_page.css('a._sqvp1j').map { |link| "https://www.airbnb.com" + link['href'] }
     end
-    
+
     def get_price
         @parsed_page.css('div._4gelgl').css('div._1jqckyi').map { |cost| cost.text }
-    end 
+    end
+
+    def get_rating
+        @parsed_page.css('span._11ry7lz').children.each { |rating| rating.remove if rating.name == 'span' }
+    end
 end
