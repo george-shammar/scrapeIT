@@ -4,4 +4,4 @@ scrape = Web_crawler.new
 scrape.crawl
 
 scrape_whole = Whole_web.new 
-scrape_whole.crawl
+scrape_whole.crawl_whole

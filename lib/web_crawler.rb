@@ -57,6 +57,21 @@ class Whole_web < Web_crawler
         @parsed_page = Nokogiri::HTML(unparsed_page.body)
         page_number += 20
         end
-        
+    end
+
+    def crawl_whole
+        crawler_whole = Whole_web.new
+        price = crawler_whole.get_price
+        title = crawler_whole.get_title
+        link = crawler_whole.get_link
+        rating = crawler_whole.get_rating
+    
+        price.each_with_index do |item, index|
+         puts "==============================================\n"
+         puts "price: #{price[index]}"
+         puts "title:  #{title[index]}"
+         puts "rating: #{rating[index]}"
+         puts "link:  #{link[index]}\n\n"
+        end
     end
 end
