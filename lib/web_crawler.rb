@@ -14,4 +14,8 @@ class Web_crawler
     def get_title
         @parsed_page.css('div._1isz8pdq').map { |topic| topic.text }
     end
+    
+    def get_link
+        @parsed_page.css('a._sqvp1j').map { |link| "https://www.airbnb.com" + link['href'] }
+    end
 end
