@@ -49,6 +49,3 @@ class Whole_web
         end
     end
 end
-
-scrape_whole = Whole_web.new 
-scrape_whole.crawl_whole
