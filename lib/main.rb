@@ -1,4 +1,4 @@
-require_relative './lib/web_crawler'
+require_relative 'web_crawler'
 
 scrape = Web_crawler.new 
 scrape.crawl
