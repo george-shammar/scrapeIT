@@ -17,7 +17,9 @@ Airbnb maintains and hosts a marketplace, accessible to consumers on its website
 
 ## Use Cases
 ### Price intelligence
-By using this application to scrape off information from Airbnb websites (especially price)
+By using this application to scrape off information from Airbnb's website, especially price information in specific location, it can provide real estate owners listing their properties for rental on the platform valuable price information in an exceptionally qiuck manner. Owners do not need to search hundreds and in some cases, thousands of listings on the website to get the neccessary price information. This would enable owners/users make pricing decision in a timely manner.
+
+### 
 
 
 
