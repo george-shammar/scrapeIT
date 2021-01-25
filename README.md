@@ -58,7 +58,7 @@ ruby main.rb
 
 ## Author
 
-- George Gbenle
+George Gbenle
 
 - github: [@george-shammar](https://github.com/george-shammar)
 - twitter: [@GeorgeShammar](https://twitter.com/GeorgeShammar)
@@ -70,4 +70,12 @@ ruby main.rb
 Contributions, issues, and feature requests are welcome!
 
 
-Feel free to check the [issues page] (https://github.com/george-shammar/scrapeIT/issues).
+Feel free to check the issues page: https://github.com/george-shammar/scrapeIT/issues
+
+### Show your support
+
+Give a ⭐️ if you like this project!
+
+### License
+
+This project is [MIT](./LICENSE) licensed.
