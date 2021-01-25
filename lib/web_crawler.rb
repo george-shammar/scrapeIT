@@ -10,4 +10,8 @@ class Web_crawler
         unparsed_page = HTTParty.get(url)
         @parsed_page = Nokogiri::HTML(unparsed_page.body)
     end
+
+    def get_title
+        @parsed_page.css('div._1isz8pdq').map { |topic| topic.text }
+    end
 end
