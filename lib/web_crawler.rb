@@ -44,8 +44,6 @@ class Web_crawler
     end
 end
 
-
-
 class Whole_web < Web_crawler
     attr_reader :ur, :page_number
 
