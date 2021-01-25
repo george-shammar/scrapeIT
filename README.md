@@ -58,3 +58,16 @@ ruby main.rb
 
 ## Author
 
+- George Gbenle
+
+- github: [@george-shammar](https://github.com/george-shammar)
+- twitter: [@GeorgeShammar](https://twitter.com/GeorgeShammar)
+- linkedIn: [@George Gblenle](https://www.linkedin.com/in/george-g-5414091b7/)
+
+
+## Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+
+Feel free to check the [issues page] (https://github.com/george-shammar/scrapeIT/issues).
