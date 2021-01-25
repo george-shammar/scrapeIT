@@ -12,7 +12,7 @@ The following are the specific data this application has been designed to retrie
 - User ratings.
 
 These are vital information that most users of the website need to make decision. The information provided are in real time which gets updated as new listings are added to website.
-![screenshot.png]
+![screenshot.png] (/screenshot.png)
 ## Tools and Technologies
 ### Ruby
 The project was built completely using Ruby.
