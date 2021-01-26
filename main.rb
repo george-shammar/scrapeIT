@@ -1,5 +1,5 @@
-require_relative '../lib/web_crawler'
-require_relative '../lib/whole_web'
+require_relative './lib/web_crawler'
+require_relative './lib/whole_web'
 
 scrape = Web_crawler.new
 scrape.crawl
