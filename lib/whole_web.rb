@@ -33,7 +33,7 @@ class Web
     @parsed_page.css('span._11ry7lz').children.each { |rating| rating.remove if rating.name == 'span' }
   end
 
-  def crawl_whole
+  def display_whole
     crawler_whole = Web.new
     price = crawler_whole.full_price
     title = crawler_whole.full_title

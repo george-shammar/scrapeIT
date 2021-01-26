@@ -27,7 +27,7 @@ class Crawler
     @parsed_page.css('span._11ry7lz').children.each { |rating| rating.remove if rating.name == 'span' }
   end
 
-  def crawl
+  def display
     crawler = Crawler.new
     price = crawler.take_price
     title = crawler.take_title
