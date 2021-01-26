@@ -2,7 +2,7 @@ require 'nokogiri'
 require 'httparty'
 require 'byebug'
 
-class Web_crawler
+class Crawler
   attr_reader :url, :page_number
 
   def initialize
@@ -28,7 +28,7 @@ class Web_crawler
   end
 
   def crawl
-    crawler = Web_crawler.new
+    crawler = Crawler.new
     price = crawler.take_price
     title = crawler.take_title
     link = crawler.take_link
