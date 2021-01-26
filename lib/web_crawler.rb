@@ -11,28 +11,28 @@ class Web_crawler
     @parsed_page = Nokogiri::HTML(unparsed_page.body)
   end
 
-  def get_title
+  def take_title
     @parsed_page.css('div._1isz8pdq').map(&:text)
   end
 
-  def get_link
+  def take_link
     @parsed_page.css('a._sqvp1j').map { |link| 'https://www.airbnb.com' + link['href'] }
   end
 
-  def get_price
+  def take_price
     @parsed_page.css('div._4gelgl').css('div._1jqckyi').map(&:text)
   end
 
-  def get_rating
+  def take_rating
     @parsed_page.css('span._11ry7lz').children.each { |rating| rating.remove if rating.name == 'span' }
   end
 
   def crawl
     crawler = Web_crawler.new
-    price = crawler.get_price
-    title = crawler.get_title
-    link = crawler.get_link
-    rating = crawler.get_rating
+    price = crawler.take_price
+    title = crawler.take_title
+    link = crawler.take_link
+    rating = crawler.take_rating
 
     price.each_with_index do |_item, index|
       puts "==============================================\n"

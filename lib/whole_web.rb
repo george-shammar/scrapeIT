@@ -17,28 +17,28 @@ class Whole_web
     end
   end
 
-  def get_title
+  def full_title
     @parsed_page.css('div._1isz8pdq').map(&:text)
   end
 
-  def get_link
+  def full_link
     @parsed_page.css('a._sqvp1j').map { |link| 'https://www.airbnb.com' + link['href'] }
   end
 
-  def get_price
+  def full_price
     @parsed_page.css('div._4gelgl').css('div._1jqckyi').map(&:text)
   end
 
-  def get_rating
+  def full_rating
     @parsed_page.css('span._11ry7lz').children.each { |rating| rating.remove if rating.name == 'span' }
   end
 
   def crawl_whole
     crawler_whole = Whole_web.new
-    price = crawler_whole.get_price
-    title = crawler_whole.get_title
-    link = crawler_whole.get_link
-    rating = crawler_whole.get_rating
+    price = crawler_whole.full_price
+    title = crawler_whole.full_title
+    link = crawler_whole.full_link
+    rating = crawler_whole.full_rating
 
     price.each_with_index do |_item, index|
       puts "==============================================\n"
