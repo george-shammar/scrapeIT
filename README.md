@@ -11,7 +11,7 @@ The following are the specific data this application has been designed to retrie
 - Link to each listing.
 - User ratings.
 
-These are vital information that most users of the website need to make decision. The information provided are in real time which gets updated as new listings are added to website.
+These are vital information that most users of the website need to make decision. The information provided are in real time which gets updated as new listings are added to the website.
 ![screenshot](./screenshot.png)
 ## Tools and Technologies
 ### Ruby
