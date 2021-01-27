@@ -30,5 +30,4 @@ class Web
   def full_rating
     @parsed_page.css('span._11ry7lz').children.each { |rating| rating.remove if rating.name == 'span' }
   end
-  
 end
