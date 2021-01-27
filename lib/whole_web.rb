@@ -3,7 +3,7 @@ require 'httparty'
 require 'byebug'
 
 class Web
-  attr_reader :ur, :page_number
+  
 
   def initialize
     page_number = 20
