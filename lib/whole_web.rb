@@ -3,8 +3,6 @@ require 'httparty'
 require 'byebug'
 
 class Web
-  
-
   def initialize
     page_number = 20
     while page_number <= 40
@@ -17,8 +15,6 @@ class Web
     end
   end
 
-  private
-  
   def full_title
     @parsed_page.css('div._1isz8pdq').map(&:text)
   end
@@ -34,5 +30,5 @@ class Web
   def full_rating
     @parsed_page.css('span._11ry7lz').children.each { |rating| rating.remove if rating.name == 'span' }
   end
-
+  
 end
