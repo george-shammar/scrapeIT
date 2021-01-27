@@ -33,19 +33,4 @@ class Web
     @parsed_page.css('span._11ry7lz').children.each { |rating| rating.remove if rating.name == 'span' }
   end
 
-  def display_whole
-    crawler_whole = Web.new
-    price = crawler_whole.full_price
-    title = crawler_whole.full_title
-    link = crawler_whole.full_link
-    rating = crawler_whole.full_rating
-
-    price.each_with_index do |_item, index|
-      puts "==============================================\n"
-      puts "price: #{price[index]}"
-      puts "title:  #{title[index]}"
-      puts "rating: #{rating[index]}"
-      puts "link:  #{link[index]}\n\n"
-    end
-  end
 end
