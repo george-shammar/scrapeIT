@@ -17,6 +17,8 @@ class Web
     end
   end
 
+  private
+  
   def full_title
     @parsed_page.css('div._1isz8pdq').map(&:text)
   end
