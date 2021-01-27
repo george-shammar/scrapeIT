@@ -12,33 +12,33 @@ describe Crawler do
   describe '#take_title' do
     it 'returns the title of the listing on the first page' do
       title_example = 'Cozy Studio in Passion Hills Apartment'
-      expect(page.take_title).to include(title_example)
+      expect(page.send(:take_title)).to include(title_example)
     end
     it 'does not return a value that is not a title' do
       non_title = 'Peculiar Apartment in Paris'
-      expect(page.take_title).not_to include(non_title)
+      expect(page.send(:take_title)).not_to include(non_title)
     end
   end
 
   describe '#take_link' do
     it 'returns an array with the required information from the first page' do
-      expect(page.take_link).to be_an Array
+      expect(page.send(:take_link)).to be_an Array
     end
     it 'does not return a value or array that is not a link on the first page' do
       non_link = 'https://www.codedli.com'
-      expect(page.take_link).not_to include(non_link)
+      expect(page.send(:take_link)).not_to include(non_link)
     end
   end
 
   describe '#take_price' do
     it 'returns an array with the price of the listing on the first page' do
-      expect(page.take_price).to be_an Array
+      expect(page.send(:take_price)).to be_an Array
     end
   end
 
   describe '#take_rating' do
     it 'returns values that are true within the website' do
-      expect(page.take_rating).to be_truthy
+      expect(page.send(:take_rating)).to be_truthy
     end
   end
 end
@@ -52,33 +52,33 @@ describe Web do
   describe '#full_title' do
     it 'returns the title of the listing on the rest of the website' do
       title_example = 'Airport Residential Very Spacious Suite'
-      expect(page_whole.full_title).to include(title_example)
+      expect(page_whole.send(:full_title)).to include(title_example)
     end
     it 'does not return a value that is not a title' do
       non_title = 'Peculiar Apartment in Paris'
-      expect(page_whole.full_title).not_to include(non_title)
+      expect(page_whole.send(:full_title)).not_to include(non_title)
     end
   end
 
   describe '#full_link' do
     it 'returns an array with the required information from the rest of the site' do
-      expect(page_whole.full_link).to be_an Array
+      expect(page_whole.send(:full_link)).to be_an Array
     end
     it 'does not return a value or array that is not a link on the first page' do
       non_link = 'https://www.codedli.com'
-      expect(page_whole.full_link).not_to include(non_link)
+      expect(page_whole.send(:full_link)).not_to include(non_link)
     end
   end
 
   describe '#full_price' do
     it 'returns an array with the price of the listing on the rest of the site' do
-      expect(page_whole.full_price).to be_an Array
+      expect(page_whole.send(:full_price)).to be_an Array
     end
   end
 
   describe '#take_rating' do
     it 'returns values for ratings that are true within the website' do
-      expect(page_whole.full_rating).to be_truthy
+      expect(page_whole.send(:full_rating)).to be_truthy
     end
   end
 end

@@ -9,7 +9,7 @@ class Crawler
     unparsed_page = HTTParty.get(@url)
     @parsed_page = Nokogiri::HTML(unparsed_page.body)
   end
-  
+
   private
 
   def take_title
