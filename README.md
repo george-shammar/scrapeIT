@@ -50,9 +50,9 @@ git clone URL/SSH key
 ```
 bundle install
 ```
-- From the root directory(SCRAPEIT), run the following to get the above specified data in real time:
+- From the root directory(SCRAPEIT), change directory into the bin directory by running the following to get the above specified data in real time:
 ```
-ruby main.rb
+ruby bin/main.rb
 ```
 - The data is now yours to do as you like.
 
