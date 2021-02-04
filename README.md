@@ -62,7 +62,7 @@ George Gbenle
 
 - github: [@george-shammar](https://github.com/george-shammar)
 - twitter: [@GeorgeShammar](https://twitter.com/GeorgeShammar)
-- linkedIn: [@George Gblenle](https://www.linkedin.com/in/george-g-5414091b7/)
+- linkedIn: [@George Gblenle](https://www.linkedin.com/in/georgegbenle/)
 
 
 ## Contributing
