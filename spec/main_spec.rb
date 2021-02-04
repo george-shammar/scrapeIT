@@ -11,7 +11,7 @@ describe Crawler do
 
   describe '#take_title' do
     it 'returns the title of the listing on the first page' do
-      title_example = 'Cozy Studio in Passion Hills Apartment'
+      title_example = 'Executive Large Studio at Passion Hills Apartments'
       expect(page.send(:take_title)).to include(title_example)
     end
     it 'does not return a value that is not a title' do
